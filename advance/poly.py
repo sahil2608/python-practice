@@ -31,6 +31,7 @@ pet_speak(my_dog)
 pet_speak(my_cat)
 
 #Abstract classes
+
 class Document():
     def __init__(self,name):
         self.name = name
@@ -38,13 +39,16 @@ class Document():
         raise NotImplementedError("Atleast implement sub abstract method ")
 my_doc=Document('Pdf')
 
+
 class Pdf(Document):
     def show(self):
         print("Pdf content here")
 
+
 class Word(Document):
     def show(self):
         print("Word content here")
+
 
 my_pdf=Pdf('pdf')
 my_word=Word('word')
